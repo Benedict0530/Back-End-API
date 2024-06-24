@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000; // Port to run the server (default: 3000)
 
 // Define a route that returns the JSON response
-app.get('/api/record', (req, res) => {
+app.get('/', (req, res) => {
     const responseData = {
         "record": {
             "dbindex": 1,
